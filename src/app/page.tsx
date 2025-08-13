@@ -1,12 +1,20 @@
 "use client";
 
-import Banner from "@/components/Banner";
+import About from "@/components/About";
+import Guests from "@/components/Guests";
+import Hero from "@/components/Hero";
+import MiniMenu from "@/components/MiniMenu";
+import Reservation from "@/components/Reservation";
 
 function page() {
   
   return (
     <div>
-       <Banner />
+       <Hero />
+       <About />
+       <MiniMenu />
+       <Guests />
+       <Reservation />
     </div>
   )
 }

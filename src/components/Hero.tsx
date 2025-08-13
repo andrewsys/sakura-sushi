@@ -1,7 +1,7 @@
 import Button from "@/ui/Button";
 import { lora } from "@/ui/fonts";
 
-function Banner() {
+function Hero() {
   return (
     <section className={`relative ${lora.className}`}>
         <video
@@ -14,13 +14,13 @@ function Banner() {
             <source src="/home-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+        <article className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-4"><span className="text-[#FF007F]">Sakura</span> Sushi</h1>
             <p className="text-lg md:text-2xl mb-8">The Art of Traditional Flavor</p>
             <Button text="Explore Our Menu" />
-        </div>
+        </article>
     </section>
   )
 }
 
-export default Banner
+export default Hero;
