@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { lora } from "@/ui/fonts"
+import MenuItem from "@/ui/MenuItem";
 
 function page() {
     const [selected, setSelected] = useState("Food");
@@ -32,6 +33,25 @@ function page() {
                         </span>
                     </label>
                 </div>
+                <hr className="text-gray-300 mt-5" />
+                <section className="mt-10">
+                    {selected === "Food" && (
+                        <>
+                            <MenuItem src="/menu/yakisoba.jpeg" alt="ýakisoba dish" title="Yakisoba" description="A savory stir-fried noodle dish with vegetables and your choice of protein, seasoned with a tangy sauce." orientation={false} />
+                            <MenuItem src="/menu/yakisoba.jpeg" alt="ýakisoba dish" title="Yakisoba" description="A savory stir-fried noodle dish with vegetables and your choice of protein, seasoned with a tangy sauce." orientation={true} />
+                            <MenuItem src="/menu/yakisoba.jpeg" alt="ýakisoba dish" title="Yakisoba" description="A savory stir-fried noodle dish with vegetables and your choice of protein, seasoned with a tangy sauce." orientation={false} />
+                            <MenuItem src="/menu/yakisoba.jpeg" alt="ýakisoba dish" title="Yakisoba" description="A savory stir-fried noodle dish with vegetables and your choice of protein, seasoned with a tangy sauce." orientation={true} />
+                        </>
+                    )}
+                    {selected === "Beverage" && (
+                        <>
+                            <MenuItem src="/menu/sake.jpg" alt="sake beverage" title="Sake" description="A traditional Japanese rice wine with a smooth, rich flavor, perfect for pairing with sushi." orientation={true} />
+                            <MenuItem src="/menu/sake.jpg" alt="sake beverage" title="Sake" description="A traditional Japanese rice wine with a smooth, rich flavor, perfect for pairing with sushi." orientation={false} />
+                            <MenuItem src="/menu/sake.jpg" alt="sake beverage" title="Sake" description="A traditional Japanese rice wine with a smooth, rich flavor, perfect for pairing with sushi." orientation={true} />
+                            <MenuItem src="/menu/sake.jpg" alt="sake beverage" title="Sake" description="A traditional Japanese rice wine with a smooth, rich flavor, perfect for pairing with sushi." orientation={false} />
+                        </>
+                    )}
+                </section>
             </div>
         </div>
     )
