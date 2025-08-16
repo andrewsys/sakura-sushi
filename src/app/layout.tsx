@@ -16,10 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`flex flex-col min-h-screen antialiased`}
       >
         <Header />
-        <main>
+        <main className="flex-grow">
           {children}
         </main>
         <Footer />
