@@ -7,16 +7,18 @@ import clsx from 'clsx';
 interface Props {
   text: string;
   link: string;
+  onClick?: () => void;
+  className?: string;
 }
 
-function NavLink({text, link}: Props) {
+function NavLink({text, link, className}: Props) {
   const pathname = usePathname();
 
   return (
     <Link href={link} className={clsx(
-      "text-lg font-medium hover:text-[#FF007F]",
+      `text-lg font-medium hover:text-[#FF007F] ${className}`,
       {
-        'text-white font-medium': pathname === "/",
+        'md:text-white font-medium': pathname === "/",
         'text-[#FF007F]': pathname === link,
       })}
     >

@@ -6,7 +6,7 @@ interface Props {
 
 function GuestItem({ review, user, occupation }: Props) {
   return (
-    <article className="flex flex-col justify-between p-4 bg-gray-100 aspect-square md:h-[290px] font-medium">
+    <article className="flex flex-col justify-between p-4 bg-gray-100 aspect-square lg:h-[290px] font-medium">
         <p className="text-gray-500">
             "{review}"
         </p>
