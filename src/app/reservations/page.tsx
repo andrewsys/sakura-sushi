@@ -6,7 +6,7 @@ import clsx from "clsx";
 import PopUp from "@/ui/PopUp";
 import { permanentRedirect } from 'next/navigation'
 
-function page() {
+function Page() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [selectedTable, setSelectedTable] = useState("Choose a table on the selector");
@@ -150,4 +150,4 @@ function page() {
     )
 }
 
-export default page
+export default Page;

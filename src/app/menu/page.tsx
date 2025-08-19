@@ -4,7 +4,7 @@ import { useState } from "react";
 import { lora } from "@/ui/fonts"
 import MenuItem from "@/ui/MenuItem";
 
-function page() {
+function Page() {
     const [selected, setSelected] = useState("Food");
 
     const handleSelection = (value: string) => {
@@ -57,4 +57,4 @@ function page() {
     )
 }
 
-export default page
+export default Page;

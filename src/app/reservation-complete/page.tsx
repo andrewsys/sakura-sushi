@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { lora } from "@/ui/fonts"
 
-function page() {
+function Page() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] px-4">
         <Image src="/reservation-success.svg" alt="calendar with checkmark icon" width={50} height={50} className="mb-6" />
@@ -20,4 +20,4 @@ function page() {
   )
 }
 
-export default page
+export default Page;

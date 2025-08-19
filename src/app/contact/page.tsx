@@ -3,7 +3,7 @@ import { useState } from "react";
 import { lora } from "@/ui/fonts";
 import clsx from "clsx";
 
-function page() {
+function Page() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -53,4 +53,4 @@ function page() {
   )
 }
 
-export default page
+export default Page;

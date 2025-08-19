@@ -6,7 +6,7 @@ import Hero from "@/components/Hero";
 import MiniMenu from "@/components/MiniMenu";
 import Reservation from "@/components/Reservation";
 
-function page() {
+function Page() {
   
   return (
     <div>
@@ -19,4 +19,4 @@ function page() {
   )
 }
 
-export default page
+export default Page;
