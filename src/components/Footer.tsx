@@ -29,7 +29,7 @@ function Footer() {
                 </article>
             </section>
             <hr />
-            <span className="self-center">© 2025 Sakura Sushi. All rights reserved.</span>
+            <span className="self-center">© 2025 Sakura Sushi. All rights reserved. Made by <a className="underline" href="https://github.com/andrewsys" target="_blank" rel="noopener noreferrer">github@andrewsys</a></span>
         </div>
     </footer>
   )
