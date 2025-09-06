@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { lora } from "@/ui/fonts"
 
+{/* Seção Sobre Nós da página principal */}
 function About() {
   return (
     <section className="flex w-full justify-center py-50 px-5 lg:px-0">

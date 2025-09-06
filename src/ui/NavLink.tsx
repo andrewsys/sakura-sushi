@@ -12,6 +12,7 @@ interface Props {
 }
 
 function NavLink({text, link, className}: Props) {
+  {/* Obtém o caminho atual para destacar o link ativo na nav */}
   const pathname = usePathname();
 
   return (
@@ -28,5 +29,3 @@ function NavLink({text, link, className}: Props) {
 }
 
 export default NavLink;
-
-//Our menu blends timeless recipes with the freshest ingredients — from delicate sushi and steaming bowls of ramen to crisp tempura and fragrant teas. Each dish is prepared with care, honoring the traditions and seasonal tastes of Japanese cuisine.

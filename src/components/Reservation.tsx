@@ -2,6 +2,7 @@ import Button from "@/ui/Button";
 import { lora } from "@/ui/fonts";
 import { permanentRedirect } from "next/navigation";
 
+{/* Seção de reserva da página principal */}
 function Reservation() {
   return (
     <section className="relative w-full bg-[url(/restaurant.jpg)] bg-cover bg-center">

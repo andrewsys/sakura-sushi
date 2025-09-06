@@ -16,6 +16,7 @@ function Page() {
     const [showPopUp, setShowPopUp] = useState(false);
     const [firstTry, setFirstTry] = useState(true);
 
+    {/* Validação de campos e exibe popup de confirmação */}
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         setFirstTry(false);
@@ -32,11 +33,15 @@ function Page() {
 
     return (
     <div className="w-full flex flex-col items-center justify-center px-5 lg:px-0">
+        {/* Título da página */}
         <h1 className={`font-bold lg:text-3xl text-2xl text-center py-30 lg:w-[900px] ${lora.className}`}>Secure your table and prepare for an unforgettable Japanese dining experience.</h1>
+        
+        {/* Formulário de reserva */}
         <form
           onSubmit={handleSubmit}
           className="w-full max-w-[900px] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center justify-center pb-39"
         >
+          {/* Seletor de mesas */}
           <div className="flex flex-col items-center w-full">
             <section className="text-center w-full mb-3">
               <h1 className="text-2xl font-bold">Select Your Table</h1>
@@ -45,7 +50,9 @@ function Page() {
             <TableSelector setTable={setSelectedTable} setSeats={setSeats} />
           </div>
 
+          {/* Campos do formulário */}
           <div className="flex flex-col gap-3 mt-5 items-start w-full">
+            {/* Campo Nome */}
             <label htmlFor="name" className="w-full">
               <span className="text-lg font-semibold">Name:</span>
               <input
@@ -61,6 +68,7 @@ function Page() {
                 onChange={(e) => setName(e.target.value)}
               />
             </label>
+            {/* Campo Email */}
             <label htmlFor="email" className="w-full">
               <span className="text-lg font-semibold">Email:</span>
               <input
@@ -76,6 +84,7 @@ function Page() {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </label>
+            {/* Campo Mesa selecionada (apenas leitura) */}
             <label htmlFor="table" className="w-full">
               <span className="text-lg font-semibold">Selected Table:</span>
               <input
@@ -93,6 +102,7 @@ function Page() {
                 disabled
               />
             </label>
+            {/* Campo Data */}
             <label htmlFor="date" className="w-full">
               <span className="text-lg font-semibold">Select Date:</span>
               <input
@@ -107,6 +117,7 @@ function Page() {
                 onChange={(e) => setDate(e.target.value)}
               />
             </label>
+            {/* Campo Horário */}
             <label htmlFor="time" className="w-full">
               <span className="text-lg font-semibold">Select Time:</span>
               <select
@@ -127,6 +138,7 @@ function Page() {
                 <option value="10:00">10:00 PM</option>
               </select>
             </label>
+            {/* Botão de confirmação */}
             <button
               className="w-full mt-3 px-4 py-2 bg-[#FF007F] text-white font-semibold hover:cursor-pointer hover:bg-[#e60073] transition-colors"
               type="submit"
@@ -135,6 +147,7 @@ function Page() {
             </button>
           </div>
         </form>
+        {/* Popup de confirmação de reserva */}
         {showPopUp && <PopUp
             title="Reservation Confirmation"
             description={`Do you want to confirm your reservation for table ${selectedTable} on ${

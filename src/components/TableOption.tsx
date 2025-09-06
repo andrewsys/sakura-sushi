@@ -1,7 +1,3 @@
-"use client";
-import { useState } from "react";
-import clsx from "clsx";
-
 interface Props {
     table: string;
     setTable: (table: string) => void;
@@ -9,6 +5,7 @@ interface Props {
     setSeats: (seats: string) => void;
 }
 
+{/* Componente de opção de mesa no formulário de reserva */}
 function TableOption({table, setTable, seats, setSeats}: Props) {
     return (
         <label htmlFor={`t${table}`} className="w-[50px] h-[50px]">

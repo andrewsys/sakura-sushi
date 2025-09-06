@@ -13,8 +13,10 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  {/* Cabeçalho com navegação */}
   return (
     <header>
+        {/* Navegação para computadores */}
         <nav className="z-10 absolute top-0 md:flex gap-8 justify-center items-center w-full p-4 hidden">
             <NavLink text="Home" link="/" />
             <NavLink text="Menu" link="/menu" />
@@ -22,6 +24,7 @@ function Header() {
             <NavLink text="Reservations" link="/reservations" />
         </nav>
 
+        {/* Cabeçalho para celulares */}
         <div className="fixed top-0 right-0 z-15 p-4 md:hidden flex items-center justify-between w-full bg-white">
           <Link href="/" onClick={() => isMenuOpen && toggleMenu()}>
             <span className={`text-2xl font-bold text-black ${lora.className}`}><span className="text-[#FF007F]">Sakura</span> Sushi</span>
@@ -31,7 +34,8 @@ function Header() {
           </button>
         </div>
 
-        <nav
+        {/* Navegação para celulares */}
+        <nav 
           className={clsx(
             "z-10 pt-19 fixed bg-white top-0 left-0 gap-8 w-full p-4 md:hidden transition-transform duration-300 ease-in-out",
             {
@@ -59,6 +63,7 @@ function Header() {
           </ul>
         </nav>
 
+        {/* Cor do fundo quando o menu está aberto + lógica para fechar a navegação ao clicar fora do menu*/}
         <div className={clsx("md:hidden w-screen h-screen bg-black/30 z-2",
           {
             "fixed": isMenuOpen,
