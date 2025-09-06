@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-    <b>A fictional complete website for a traditional japanese restaurant featuring online reservations, interactive menu and a contact form</b>
+    <b>A fictional completely responsive website for a traditional japanese restaurant featuring online reservations, interactive menu and a contact form</b>
 </p>
 
 <p align="center">
@@ -16,10 +16,10 @@
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
-    <img src="./public/github/main.png" alt="Image Example" width="500px">
-    <img src="./public/github/menu.png" alt="Image Example" width="500px">
-    <img src="./public/github/contact.png" alt="Image Example" width="500px">
-    <img src="./public/github/reservations.png" alt="Image Example" width="500px">
+    <img src="./public/github/main.png" alt="Image displaying the main page of the website" width="500px">
+    <img src="./public/github/menu.png" alt="Image displaying the menu page of the website" width="500px">
+    <img src="./public/github/contact.png" alt="Image displaying the contact page of the website" width="500px">
+    <img src="./public/github/reservations.png" alt="Image displaying the reservations page of the website" width="500px">
 </p>
 
 <h2 id="technologies">💻 Technologies</h2>
